@@ -11,6 +11,7 @@ for obj in objs:
     
 blockchain = blockchain_objects[0]
 
+# checking for fake transactions
 if blockchain.chain[2].transactions != fake_transactions:
   fail_tests('Did you modify the transactions to fake_transactions in the second block that was added?')
   
